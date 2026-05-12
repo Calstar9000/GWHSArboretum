@@ -6,58 +6,22 @@
         <title>GWHS Arboretum</title>
         <link rel="stylesheet" href="css/styles.css" type="text/css">
     </head>
+    <script src="funcs.js"></script>
     <style> 
-        .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #004e1f;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        }
-
-        .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #b9b9b9;
-        display: block;
-        transition: 0.3s;
-        }
-
-        .sidenav a:hover {
-        color: #f1f1f1;
-        }
-
-        .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-        }
-        @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
+        body {
+            background-image: url('util/george-washington-high-school-denver-co-primaryphoto.jpg'); /* */
+            background-repeat: no-repeat;           /* Prevents the image from tiling */
+            background-size: cover;                  /* Ensures the image covers the whole screen */
+            background-position: center;             /* Centers the image */
+            background-attachment: fixed;           /* Keeps image static while scrolling */
         }
     </style>    
-    <script>
-        function openNav() {
-            document.getElementById("side_nav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("side_nav").style.width = "0";
-        }
-    </script>
     <body>
         <div id="side_nav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
             <a href="#">About</a>
-            <a href="#">Trees</a>
+            <a href="trees.html">Trees</a>
             <a href="#">Contact Us</a>
         </div>
         <side_nav>
@@ -71,13 +35,13 @@
     
     <body>
         <main>
-            <img src="util/george-washington-high-school-denver-co-primaryphoto.jpg" alt="GWHS Trees" width=900><br><br>
+            <!-- <img src="util/george-washington-high-school-denver-co-primaryphoto.jpg" alt="GWHS Trees" width=900><br><br> -->
             Welcome to the George Washington Arboretum website!<br>
             Here, you can find information about all the trees found around the GWHS campus!
         </main>
         <br>
-        <main>Links:<br>
-            <a href="aceraceae/red_maple.html">Red Maples</a> | link | link
-        </main>
+        <!-- <main>Links:<br>
+            <a href="aceraceae/red_maple.html">Red Maples</a> | <a href="None">Red Maples</a> | <a href="">Red Maples</a>
+        </main> -->
     </body>
 </html>
